@@ -1,5 +1,4 @@
 from utils import read_input_file
-import re
 
 if __name__ == '__main__':
     print("Day 1:")
