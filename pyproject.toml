@@ -4,4 +4,20 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "ruff>=0.9.2",
+]
+
+[tool.ruff]
+exclude = [".ruff_cache", ".venv", "inputs", "__pycache__"]
+line-length = 150
+indent-width = 4
+
+[tool.ruff.lint]
+select=["E1", "E2", "E3", "E4", "E502", "F"]
+
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
